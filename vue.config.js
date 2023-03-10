@@ -8,5 +8,8 @@ module.exports = defineConfig({
         args[0].title= 'To-Do List'
         return args
       })
-  }
+  },
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/Yingrsy/'
+  : '/'
 })
